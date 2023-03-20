@@ -22,13 +22,11 @@
   <body>
 
     <script>
-      function getData() {
-        let s_name = s_nameInput.text;
-      }
+      // scripting things here, or attach a .js file.
     </script>
 
     <div class="form_container">
-      <form action="getData()" method="post">
+      <form action="" method="post">
 
         <div class="description">
           <img class="logo" id="r15logo" src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1561477313/region15org/wrru4hrzclmsdc6lho1q/R15_logo_colorMatchRed.eps" alt="Region 15 Logo">
@@ -38,28 +36,23 @@
 
         <!-- Student Name -->
         <div class="question_container">
-
           <div class="question_with_desc">
             <label class="question" for="s_nameInput">Student Name:</label>
           </div>
-
-<!--          <div class="question_description">-->
-<!--            <label class="question_description">Description here.</label>-->
-<!--          </div>-->
-
           <div class="short_answer">
-            <input class="short_answer" placeholder="Your answer" type="text" id="s_nameInput" autocomplete="name" required="required">
+            <input class="short_answer" placeholder="Your answer" type="text" id="s_nameInput" autocomplete="name" autofocus="autofocus" required="required">
           </div>
-
         </div>
 
         <!-- Student Gender -->
+        <!-- Style the <select> when you get the chance. -->
         <div class="question_container">
           <div class="question">
             <label class="question" for="s_gender">Student Gender</label>
           </div>
           <div class="short_answer">
-            <select type="radio" id="s_gender" required="required">
+            <select id="s_gender" required="required">
+              <option value="">Choose...</option>
               <option value="M">Male</option>
               <option value="F">Female</option>
             </select>
@@ -75,21 +68,27 @@
             <label class="question_description">This can be found on your student ID card.</label>
           </div>
           <div class="short_answer">
-            <input class="short_answer" type="number" placeholder="Your answer" id="s_id" required="required">
+            <input class="short_answer" pattern="\d{7}" placeholder="Your answer" id="s_id" required="required">
           </div>
         </div>
 
         <!-- Student SSN -->
         <div class="question_container">
           <div class="question">
-            <label class="question">Placeholder</label>
+            <label class="question" for="s_ssn">Last 4 digits of Student's SSN</label>
+          </div>
+          <div class="short_answer">
+            <input class="short_answer" pattern="\d{4}" placeholder="Your answer" id="s_ssn" required="required">
           </div>
         </div>
 
         <!-- Student DOB -->
         <div class="question_container">
           <div class="question">
-            <label class="question">Placeholder</label>
+            <label class="question" for="s_dob">Student's Date of Birth</label>
+          </div>
+          <div class="short_answer">
+            <input class="short_answer" type="date" id="s_dob" required="required">
           </div>
         </div>
 
