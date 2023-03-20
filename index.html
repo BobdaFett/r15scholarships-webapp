@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+
+    <script>
+      function getData() {
+        let s_name = s_nameInput.text;
+      }
+    </script>
+
+    <div class="form_container">
+      <form action="getData()" method="post">
+
+        <div class="description">
+          <img class="logo" id="r15logo" src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1561477313/region15org/wrru4hrzclmsdc6lho1q/R15_logo_colorMatchRed.eps" alt="Region 15 Logo">
+          <p>Hello world! This is HTML5 Boilerplate.</p><br>
+          <p>When sending sensitive data, make sure to use the HTTP POST method. This allows for large data transfers without use of an insecure URL pass.</p>
+        </div>
+
+        <!-- Student Name -->
+        <div class="question_container">
+
+          <div class="question_with_desc">
+            <label class="question" for="s_nameInput">Student Name:</label>
+          </div>
+
+<!--          <div class="question_description">-->
+<!--            <label class="question_description">Description here.</label>-->
+<!--          </div>-->
+
+          <div class="short_answer">
+            <input class="short_answer" placeholder="Your answer" type="text" id="s_nameInput" autocomplete="name" required="required">
+          </div>
+
+        </div>
+
+        <!-- Student Gender -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question" for="s_gender">Student Gender</label>
+          </div>
+          <div class="short_answer">
+            <select type="radio" id="s_gender" required="required">
+              <option value="M">Male</option>
+              <option value="F">Female</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Student ID Number -->
+        <div class="question_container">
+          <div class="question_with_desc">
+            <label class="question" for="s_id">Student ID Number</label>
+          </div>
+          <div class="question_description">
+            <label class="question_description">This can be found on your student ID card.</label>
+          </div>
+          <div class="short_answer">
+            <input class="short_answer" type="number" placeholder="Your answer" id="s_id" required="required">
+          </div>
+        </div>
+
+        <!-- Student SSN -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Student DOB -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Student Street Address -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Student Phone Number -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Student Preferred Email -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Guardian 1 Name -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Guardian 1 Relationship -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Guardian 2 Name -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Guardian 2 Relationship -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Unweighted GPA -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- SAT Reading -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- SAT Math -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- ACT Score -->
+        <div class="question_container">
+          <div class="question">
+            <label class="question">Placeholder</label>
+          </div>
+        </div>
+
+        <!-- Buttons at the bottom of the form. -->
+        <div class="buttons">
+          <button onclick="alert('Going Back')">Back</button>
+          <button type="submit">Submit</button>
+          <button class="contact">Contact Us</button>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
