@@ -21,14 +21,13 @@
 
   <body>
 
-    <script>
-      // scripting things here, or attach a .js file.
-    </script>
+  <script src="js/main.js"></script>
 
     <div class="form_container">
-      <form action="" method="post">
+      <form action="/some/file/here" method="post">
 
         <div class="description">
+          <!-- Eventually make this logo a static file. That will function much better. -->
           <img class="logo" id="r15logo" src="https://resources.finalsite.net/images/f_auto,q_auto,t_image_size_1/v1561477313/region15org/wrru4hrzclmsdc6lho1q/R15_logo_colorMatchRed.eps" alt="Region 15 Logo">
           <p>Please excuse my sad remake of a Google Form.</p><br><br>
           <p>All questions are required unless marked otherwise.</p>
@@ -171,7 +170,7 @@
             <label class="question" for="gpa">Unweighted GPA (needs work)</label>
           </div>
           <div class="short_answer">
-            <input class="short_answer" pattern="" id="gpa" placeholder="Your answer" required="required">
+            <input class="short_answer" type="number" id="gpa" placeholder="Your answer" required="required">
           </div>
         </div>
 
@@ -220,7 +219,6 @@
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
   </body>
 </html>
